@@ -1,30 +1,33 @@
-# /bin/python3
+#!/bin/python3
 import random
 gi.require_version('Gtk', '3.0')
 from gi.repository import Gtk
 
 class MyWindow(Gtk.Window):
+### todo: get the rolled number actually in the window, not just output to the console.
 
     def __init__(self):
-        Gtk.Window.__init__(self, title="Dice Util 0.0.1")
+        Gtk.Window.__init__(self, title="DYCE Tabletop")
         self.box = Gtk.Box(spacing=0)
         self.add(self.box)
         # dice buttons
-        ## D4
+        ## Coin (50/50, 2 faces)
+	coin = ["heads","tails"]
+	self.c2 = Gtk.Button(label="Coin")
+	self.c2.connect("clicked", self.cointoss)
+	## D4
         self.d4 = Gtk.Button(label="D4")
         self.d4.connect("clicked", self.rd4)
-        ## D20
-        self.d20 = Gtk.Button(label="D20")
-        self.d20.connect("clicked", self.rd20)
-        self.box.pack_start(self.d20, True, True, 0)
         ## D6
         self.d6 = Gtk.Button(label="D6")
         self.d6.connect("clicked", self.rd6)
-        self.box.pack_start(self.d6, True, True, 0)
         ## D8
         self.d8 = Gtk.button(label="D8")
         self.d8.connect("clicked", self.rd8)
-        # pack defined buttons
+	## D12
+	self.d12 = Gtk.Button(label="D12")
+	self.d12.connect("clicked", se
+	# organize and display buttons
         self.box.pack_start(self.d4, True, True, 0)
         self.box.pack_start(self.d6, True, True, 0)
         self.box.pack_start(self.d8, True, True, 0)
