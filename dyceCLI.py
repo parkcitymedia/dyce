@@ -1,5 +1,6 @@
 #!/bin/python3
 from random import randint
+## pre-function definitions and value sets
 cointoss = ["heads", "tails"] #pre-define coin sides
 print("Dyce Roller CLI Mini-Script 0.0.02")
 def rollprompt():
@@ -10,8 +11,19 @@ def rollprompt():
 		print(" ")
 		print("new roll ---")
 		rollprompt()
-	roll(sides)
-def roll(sides):
+        try:
+                times = int(input("number of times rolled: "))
+                if:
+                    times < 1
+                elif:
+                    times = times
+        except(ValueError, TypeError):
+                print("not a proper number! defaulting to 1 roll")
+                print(" ")
+                sides = int(1)
+                roll(sides, times)
+	roll(sides, times)
+def roll(sides, times):
 	if sides < 0:
 		print("you can't roll negatives, give me a break.")
 		print(" ")
