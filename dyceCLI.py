@@ -32,12 +32,12 @@ def roll(sides, times):
 		print("new roll ---")
 		rollprompt()
 	    if sides == 0:
-		print("well it's obviously ONLY going to be 0. n\that's litterally nothing")
+		print("well it's obviously ONLY going to be 0. \nthat's litterally nothing")
 		print(" ")
 		print("new roll ---")
 		rollprompt()
 	    if sides == 1:
-		print("well it's obviously ONLY going to be 1. n\that's not fair, nor is it physically possible")
+		print("well it's obviously ONLY going to be 1. \nthat's not fair, nor is it physically possible")
 		print(" ")
 		print("new roll ---")
 		rollprompt()
