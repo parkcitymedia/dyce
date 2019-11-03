@@ -1,3 +1,5 @@
+Dyce has been put on the backburner indefinitely. no further development is coming in the near future.
+
 # Dyce
 <h6>a tabletop utility originally developed for gtk+3, written in python3</h6>
 <h3>FEATURES:</h3>
